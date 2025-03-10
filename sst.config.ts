@@ -12,6 +12,11 @@ export default $config({
   async run() {
     const callerIdentity = await aws.getCallerIdentity({})
     console.log(callerIdentity)
-    new sst.aws.Nextjs("TheSmokingMountain");
+    new sst.aws.Nextjs("TheSmokingMountain", {
+      domain: {
+        name: "thesmokingmountain.com",
+        aliases: ["www.thesmokingmountain.com"],
+      }
+    });
   },
 });

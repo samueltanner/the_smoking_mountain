@@ -15,8 +15,8 @@ const MainPageTextAndImages = () => {
           From my late teens through my mid-20s, I worked for the U.S.
           Geological Survey, Water Resources Division in Tacoma, Washington.
           Luckily, I was involved in many water resource studies after Mount St.
-          Helens gigantic eruption in May 1980. My partner, Colleen, and I met
-          at the U.S.G.S. One of her fondest memories is performing a water
+          Helens&apos; gigantic eruption in May 1980. My partner, Colleen, and I
+          met at the U.S.G.S. One of her fondest memories is performing a water
           chemistry analysis within days of the eruption on the Toutle River
           system, with one foot in the North Fork and one foot in the South.
         </p>
@@ -26,8 +26,9 @@ const MainPageTextAndImages = () => {
             alt="Red Zone Pass"
             width={1000}
             height={1000}
+            priority={true}
           />
-          <p>Red Zone Pass summer 1980 USGS K.Tanner</p>
+          <p>Red Zone Pass summer 1980 USGS K. Tanner</p>
         </span>
       </div>
 
@@ -124,7 +125,7 @@ const MainPageTextAndImages = () => {
             processes that occurred on May 18. Then, superelevations of
             high-velocity lahars, the &quot;Stranded Logs&quot;, and five
             additional eruptions and pumiceous pyroclastic flows in summer and
-            eruptions and pumiceous pyroclastic flows in summer and fall 1980.
+            fall 1980.
           </p>
           <p>And of course, the Spirit Lake Yacht Club stories…</p>
         </span>
@@ -195,142 +196,6 @@ const MainPageTextAndImages = () => {
           by log mat in 14-foot aluminum boat. USGS Lyn Topinka
         </p>
       </div>
-
-      {/* <TextAndImageSection
-        imageUrl="/images/RedZonePass.jpg"
-        imagePosition="right"
-        imageWidthPct={60}
-        altText="Red Zone Pass summer 1980 USGS K.Tanner"
-        subText="Red Zone Pass summer 1980 USGS K.Tanner"
-        className="bg-peach rounded-3xl p-8 text-spl-800"
-        ref={redZonePassRef}
-      >
-        <p className="text-2xl/10 font-bold p-8">
-          From my late teens through my mid-20s, I worked for the U.S.
-          Geological Survey, Water Resources Division in Tacoma, Washington.
-          Luckily, I was involved in many water resource studies after Mount St.
-          Helens gigantic eruption in May 1980. My partner, Colleen, and I met
-          at the U.S.G.S. One of her fondest memories is performing a water
-          chemistry analysis within days of the eruption on the Toutle River
-          system, with one foot in the North Fork and one foot in the South.
-        </p>
-      </TextAndImageSection>
-      <TextAndImageSection
-        imageUrl="/images/July1980RonLombardandMoryMiles.jpg"
-        imagePosition="left"
-        imageWidthPct={60}
-        altText="July 1980  Ron Lombard and Mory Miles surveying a cross section on the South Fork Toutle River near Four Corners.  USGS K. Tanner"
-        subText="July 1980  Ron Lombard and Mory Miles surveying a cross section on the South Fork Toutle River near Four Corners.  USGS K. Tanner"
-        className="bg-peach rounded-3xl p-8 text-spl-800"
-        ref={july1980RonLombardandMoryMilesRef}
-      >
-        <p className="text-2xl/10 font-bold p-8">
-          Summer 1980 was very exciting all around the volcano, surveying
-          cross-sections and establishing vertical control on all of the
-          lahar-scoured river channels draining Mount St. Helens. I had to be
-          patient and wait for our work to begin on the lakes created or
-          affected by the blast, work that required helicopter rides. That day
-          finally arrived in January 1981.
-        </p>
-      </TextAndImageSection>
-      <TextAndImageSection
-        imageUrl="/images/ThirdWeekOfJanuary1981.jpg"
-        imagePosition="right"
-        imageWidthPct={60}
-        altText="Third week of January 1981  First trip to Coldwater Lake to perform preliminary bathymetric survey.  USGS K. Tanner"
-        subText="Third week of January 1981  First trip to Coldwater Lake to perform preliminary bathymetric survey.  USGS K. Tanner"
-        className="bg-peach rounded-3xl p-8 text-spl-800"
-        ref={thirdWeekOfJanuary1981Ref}
-      >
-        <p className="text-2xl/10 font-bold p-8">
-          1981 brought busy times for the U.S.G.S. Tacoma office, with continued
-          monitoring and measurement of all streams and rivers, chemical
-          analyses on the many nearby lakes, study and test drilling on the
-          debris avalanche deposits blocking the fast-filling Spirit, Coldwater,
-          and South Fork Castle Creek Lakes…and best of all, bathymetric surveys
-          of those three lakes and more.
-        </p>
-      </TextAndImageSection>
-      <TextAndImageSection
-        imageUrl="/images/MidMay1981LeonardNelson.jpg"
-        imagePosition="top"
-        imageWidthPct={100}
-        altText="Mid-May 1981  Leonard Nelson in aluminum boat in Bear Cove, West Arm of Spirit Lake with debris avalanche hummocks. Microwave trisponder range finder in boat for use in bathymetric mapping.  USGS K. Tanner"
-        subText="Mid-May 1981  Leonard Nelson in aluminum boat in Bear Cove, West Arm of Spirit Lake with debris avalanche hummocks. Microwave trisponder range finder in boat for use in bathymetric mapping.  USGS K. Tanner"
-        className="bg-peach rounded-3xl p-8 text-spl-800"
-        ref={midMay1981LeonardNelsonRef}
-      >
-        <div className="flex flex-col gap-8 text-2xl/10 font-bold p-8">
-          <p className="">
-            Over the next 100+ days, from March 20 into July, I would like to
-            share photographs, maps, charts, research links, newspaper
-            clippings, and stories with you in daily presentations about
-            Lawetlat&apos;la. I will always try to share a photograph (or
-            several) of that day&apos;s volcanic happenings, taken exactly 45
-            years ago. If no &quot;photograph of the day&quot; exists, then I
-            will include artwork, a postcard, a map, or perhaps a camp badge.
-            The historic pre-eruption photographs and story topics bounce around
-            a bit, often adding background to the &quot;photograph of the
-            day&quot;, to a news clipping story, or to that day&apos;s
-            introductory slide.
-          </p>
-          <p>
-            The 59 pre-eruption presentations focus mainly on U.S.G.S.
-            geologists and volcanologists monitoring phreatic eruptions and the
-            deformation of the volcano&apos;s north flank, historic photographs,
-            maps, and legends. After Day 60, in addition to daily events, the
-            presentations will feature each of the six distinct volcanic
-            processes that occurred on May 18. Then, superelevations of
-            high-velocity lahars, the &quot;Stranded Logs&quot;, and five
-            additional eruptions and pumiceous pyroclastic flows in summer and
-            eruptions and pumiceous pyroclastic flows in summer and fall 1980.
-          </p>
-          <p>And of course, the Spirit Lake Yacht Club stories…</p>
-        </div>
-      </TextAndImageSection>
-      <TextAndImageSection
-        imageUrl="/images/July161981Waterchemistryanalysis.jpg"
-        secondaryImageUrl="/images/July201982NPDion.jpg"
-        imagePosition="top"
-        imageWidthPct={100}
-        altText="July 16, 1981  Chemical analysis on Spirit Lake's East Arm. USGS Water Resources Division's Sandy Embrey and Gary Turney hemmed in by log mat in 14-foot aluminum boat.  USGS Lyn Topinka"
-        subText="July 16, 1981  Chemical analysis on Spirit Lake's East Arm. USGS Water Resources Division's Sandy Embrey and Gary Turney hemmed in by log mat in 14-foot aluminum boat.  USGS Lyn Topinka"
-        secondaryAltText="July 20, 1982  N.P. Dion and S.S. Embrey reading Dissolved Oxygen levels at Deadmans Lake, 12.7 miles NNE of the vent and just beyond the blast zone. Deadman's served as the control in the lakes study.  USGS S.S. Embrey"
-        secondarySubText="July 20, 1982  N.P. Dion and S.S. Embrey reading Dissolved Oxygen levels at Deadmans Lake, 12.7 miles NNE of the vent and just beyond the blast zone. Deadman's served as the control in the lakes study.  USGS S.S. Embrey"
-        className="bg-peach rounded-3xl p-8 text-spl-800"
-        ref={july161981WaterchemistryanalysisRef}
-      >
-        <div className="flex flex-col gap-8 text-2xl/10 font-bold p-8">
-          <p className="">
-            Sandy Embrey, Norm Dion, Len Nelson, Steve Sumioka, Gary Turney, Ron
-            Lombard, Jim Ebbert, Rick Wagner, Dave Kresch, my boss Charley
-            Swift, Associate District Chief P.J. Carpenter, and Ken Tanner.
-          </p>
-          <p>
-            We still refer to ourselves as The Spirit Lake Yacht Club.
-            You&apos;ll read our stories and hydrologic research and see our
-            photographs from around the volcano. Many other Tacoma WRD
-            hydrologists that you will meet are sadly gone, or are in their 80s
-            and even 90s and I&apos;m hustling to get their stories too. I am
-            especially excited to share Sandy&apos;s and Gary&apos;s slides.
-            Stunning, never-seen-before photos of the effects of the blast. A
-            big U.S.G.S. 40th anniversary reunion scheduled for May 2020 at
-            Toutle Lake High School was cancelled by the pandemic, and we
-            eagerly await the upcoming 45th reunion this spring 2025.
-          </p>
-          <p>
-            The sequence and timing of events in the first 10 minutes of the May
-            18 eruption were very complex, and I&apos;m continually learning
-            more. Exploring the Mount St. Helens National Volcanic Monument is
-            fantastic, and countless happy days and nights have been spent there
-            since the eruption. From hearing the amazing swoosh of the
-            Nighthawks at dusk to picking chunks of pumice out of my hair. And I
-            still have a research project up my sleeve regarding the many
-            affected and newly-created lakes.
-          </p>
-          <p>- Ken Tanner</p>
-        </div>
-      </TextAndImageSection> */}
     </div>
   )
 }

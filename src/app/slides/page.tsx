@@ -3,10 +3,18 @@
 import presentationDays from "@/data/presentation_days.json"
 import PresentationThumbnail from "@/components/PresentationThumbnail"
 import dayjs from "dayjs"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
+import { useEffect } from "react"
+
 const SlidesListPage = () => {
   const router = useRouter()
-  const today = dayjs("2025-07-04")
+  let today = dayjs()
+  const params = useSearchParams()
+  const isAll = params.get("all")
+
+  if (isAll === "true") {
+    today = dayjs("2025-07-04")
+  }
   const currentMonth = today.format("MM")
   const currentDay = today.format("DD")
 
@@ -22,6 +30,7 @@ const SlidesListPage = () => {
             <PresentationThumbnail
               key={presentation.release_date}
               presentation={presentation}
+              isAll={isAll === "true"}
             />
           ))
         ) : (
