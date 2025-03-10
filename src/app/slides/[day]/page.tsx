@@ -53,6 +53,9 @@ const DayPresentationPage = ({
       <GoogleSlideWrapper
         presentationUrl={todaysPresentation?.presentation_url}
       />
+      <div className="flex flex-col gap-4 px-12 font-normal text-white">
+        <span className="font-bold">{todaysPresentation?.notes}</span>
+      </div>
     </div>
   )
 }
