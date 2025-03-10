@@ -14,7 +14,7 @@ const PresentationThumbnail = ({
   const title = `${presentation.date}${presentation?.year ? `, ${presentation.year}` : ""}`
   let route = `/slides/${presentation.release_date}`
   if (isAll) {
-    route =  `/slides/${presentation.release_date}?all=true`
+    route = `/slides/${presentation.release_date}?all=true`
   }
   return (
     <button
@@ -35,6 +35,7 @@ const PresentationThumbnail = ({
           height: "200px",
         }}
         className="rounded-xl"
+        priority={true}
       />
 
       <h2 className="group-hover:text-tangerine-dark fade-in-out overflow-hidden text-start text-lg leading-tight font-bold break-all text-white">
