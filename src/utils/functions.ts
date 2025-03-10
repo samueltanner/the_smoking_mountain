@@ -1,5 +1,5 @@
 import dayjs from "dayjs"
-import presentationDays from "@/data/presentation_days.json"
+import { presentationDays } from "@/data/presentationDays"
 
 
 
