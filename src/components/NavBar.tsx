@@ -16,8 +16,11 @@ const NavBar = () => {
   }
 
   return (
-    <div className="absolute top-2 left-2 z-50">
-      <button onClick={() => setIsOpen(!isOpen)} className="bg-black rounded-full p-2">
+    <div className="fixed top-2 left-2 z-50">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="rounded-full bg-black p-2"
+      >
         {isOpen ? (
           <X className="hover:text-tangerine fade-in-out z-[100] size-8 text-white" />
         ) : (

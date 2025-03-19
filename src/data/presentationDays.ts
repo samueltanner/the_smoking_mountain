@@ -1461,7 +1461,7 @@ export const presentationDays = [
     date: "Featured Presentations",
     year: "",
     weekday: "",
-    title: "",
+    title: "Featured Presentations",
     presentation_url:
       "https://docs.google.com/presentation/d/1DJpe_cy5Qn1kAGkT4ldqp2YArFsM6aCpbdBDd3lCb9s/preview?pli=1#slide=id.g2fa335d0b7a_0_0",
     notes:
@@ -1476,7 +1476,7 @@ export const presentationDays = [
     year: "",
     weekday: "",
     title:
-      "Before & After photographs/Before & Way After/After & Way After/Favorite photos",
+      "Before & After photographs & Favorite photos",
     presentation_url:
       "https://docs.google.com/presentation/d/1UTB-zFLIRrAnUdTpW63LMrU9s_ws0xWYbIyIulEoyZ8/preview#slide=id.g3315e742fdd_1_222",
     notes: "",

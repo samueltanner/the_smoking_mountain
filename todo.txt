@@ -1,0 +1,2 @@
+individual slides page: fix this so dates where day_count and ate are them same dont repeat the title 
+home Page: fix invalid date on button

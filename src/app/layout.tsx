@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar"
 
 export const metadata: Metadata = {
   title: "The Smoking Mountain",
-  description: "Lawetlat'la - Mount St. Helens",
+  description: "Mount St. Helens",
 }
 
 export default function RootLayout({

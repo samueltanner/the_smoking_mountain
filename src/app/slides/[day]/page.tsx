@@ -44,7 +44,7 @@ const DayPresentationPage = ({
   return (
     <div className="flex h-dvh w-full flex-col gap-16 overflow-auto p-8 pl-20">
       <div className="font-header flex items-center justify-center gap-2 text-2xl text-white">
-        <span className="font-bold">{todaysPresentation?.day_count},</span>
+
         <span className="font-bold">{todaysPresentation?.date}</span>
         <span className="font-bold">{todaysPresentation?.year}</span>
         <span className="font-bold">{todaysPresentation?.weekday}</span>

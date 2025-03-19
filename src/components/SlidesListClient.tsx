@@ -1,6 +1,6 @@
 "use client"
 
-import presentationDays from "@/data/presentation_days.json"
+import { presentationDays } from "@/data/presentationDays"
 import PresentationThumbnail from "@/components/PresentationThumbnail"
 import dayjs from "dayjs"
 import { useRouter, useSearchParams } from "next/navigation"
@@ -11,7 +11,6 @@ export default function SlidesListClient() {
   const params = useSearchParams()
   const isAll = params.get("all")
 
-  // If we got ?all=true, set the date to 2025-07-04
   if (isAll === "true") {
     today = dayjs("2025-07-04")
   }

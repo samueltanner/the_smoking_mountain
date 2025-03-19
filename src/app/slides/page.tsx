@@ -4,7 +4,9 @@ import SlidesListClient from "@/components/SlidesListClient"
 export default function SlidesPage() {
   return (
     <Suspense fallback={<div>Loading slides...</div>}>
-      <SlidesListClient />
+      <div className="pb-12">
+        <SlidesListClient />
+      </div>
     </Suspense>
   )
 }
