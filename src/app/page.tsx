@@ -52,7 +52,7 @@ export default function Home() {
           </button>
         ) : (
           <span className="text-tangerine flex size-full flex-grow items-center justify-center text-center text-2xl">
-            <p>First presentation will release on April 20th.</p>
+            <p>First presentation will release on March 20th.</p>
           </span>
         )}
       </div>
