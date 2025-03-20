@@ -39,6 +39,7 @@ export default function Home() {
               const releaseDate = todaysPresentation?.release_date
               router.push(`/slides/${releaseDate}`)
             }}
+            className="flex cursor-pointer flex-col gap-1"
           >
             <h3 className="font-header text-tangerine flex items-center justify-center gap-2 text-2xl">
               View Slides
