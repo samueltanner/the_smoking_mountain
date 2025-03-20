@@ -1,6 +1,6 @@
 "use client"
 import GoogleSlideWrapper from "@/components/GoogleSlideWrapper"
-import { getTodaysPresentation, parseDateFromUrl } from "@/utils/functions"
+import { formatDateForUrl, getTodaysPresentation, parseDateFromUrl } from "@/utils/functions"
 import { useSearchParams, useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 
@@ -18,11 +18,14 @@ const DayPresentationPage = ({
     const handleGetDay = async () => {
       const day = (await params).day
       const parsedDate = parseDateFromUrl(day.split("_").join("-"))
-      setReleaseDate(parsedDate)
+      const formattedDate = formatDateForUrl(parsedDate)
+      console.log(formattedDate)
+      setReleaseDate(formattedDate)
     }
     handleGetDay()
   }, [params])
 
+  console.log(releaseDate)
   const todaysPresentation = getTodaysPresentation(
     releaseDate,
     isAll === "true",

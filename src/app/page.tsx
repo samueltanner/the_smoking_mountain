@@ -34,23 +34,23 @@ export default function Home() {
       <MainPageTextAndImages />
       <div className="flex size-full flex-col items-center justify-center gap-8 p-8">
         {!!todaysPresentation ? (
-          <button
-            onClick={() => {
-              const releaseDate = todaysPresentation?.release_date
-              router.push(`/slides/${releaseDate}`)
-            }}
-            className="flex cursor-pointer flex-col gap-1"
-          >
-            <h3 className="font-header text-tangerine flex items-center justify-center gap-2 text-2xl">
+          <>
+            <h3 className="text-tangerine-dark text-xl md:text-2xl">
               View Slides
-              <span className="font-bold">
-                {todaysPresentation?.day_count},
-              </span>
-              <span className="font-bold">{todaysPresentation?.date}</span>
-              <span className="font-bold">{todaysPresentation?.year}</span>
-              <span className="font-bold">{todaysPresentation?.weekday}</span>
             </h3>
-          </button>
+            <button
+              onClick={() => {
+                const releaseDate = todaysPresentation?.release_date
+                router.push(`/slides/${releaseDate}`)
+              }}
+              className="cursor-pointer"
+            >
+              <h3 className="font-header text-tangerine flex items-center justify-center gap-2 text-2xl">
+                {todaysPresentation?.date}, {todaysPresentation?.year},{" "}
+                {todaysPresentation?.weekday}
+              </h3>
+            </button>
+          </>
         ) : (
           <span className="text-tangerine flex size-full flex-grow items-center justify-center text-center text-2xl">
             <p>First presentation will release on March 20th.</p>
