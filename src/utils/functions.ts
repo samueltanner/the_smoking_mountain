@@ -1,6 +1,7 @@
 import dayjs from "dayjs"
 import { presentationDays } from "@/data/presentationDays"
-
+import customParseFormat from "dayjs/plugin/customParseFormat"
+dayjs.extend(customParseFormat)
 
 
 export const getTodaysPresentation = (dateOverride?: string, allowFuture: boolean = false) => {
