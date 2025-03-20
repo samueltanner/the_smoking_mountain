@@ -1,6 +1,10 @@
 "use client"
 import GoogleSlideWrapper from "@/components/GoogleSlideWrapper"
-import { formatDateForUrl, getTodaysPresentation, parseDateFromUrl } from "@/utils/functions"
+import {
+  formatDateForUrl,
+  getTodaysPresentation,
+  parseDateFromUrl,
+} from "@/utils/functions"
 import { useSearchParams, useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 
@@ -47,10 +51,10 @@ const DayPresentationPage = ({
   return (
     <div className="flex h-dvh w-full flex-col gap-16 overflow-auto p-8 pl-20">
       <div className="font-header flex items-center justify-center gap-2 text-2xl text-white">
-
-        <span className="font-bold">{todaysPresentation?.date}</span>
-        <span className="font-bold">{todaysPresentation?.year}</span>
-        <span className="font-bold">{todaysPresentation?.weekday}</span>
+        <h3 className="font-header text-tangerine flex items-center justify-center gap-2 text-2xl">
+          {todaysPresentation?.date}, {todaysPresentation?.year},{" "}
+          {todaysPresentation?.weekday}
+        </h3>
       </div>
 
       <GoogleSlideWrapper
