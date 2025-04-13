@@ -9,7 +9,7 @@ const MainPageTextAndImages = () => {
   const midMay1981LeonardNelsonRef = useRef<HTMLDivElement>(null)
   const july161981WaterchemistryanalysisRef = useRef<HTMLDivElement>(null)
   return (
-    <div className="flex w-full flex-col gap-12 text-lg *:min-h-[800px]">
+    <div className="flex w-full flex-col gap-16 text-lg md:*:min-h-[800px]">
       <div className="flex flex-wrap items-center justify-around gap-12 bg-white px-12 py-24">
         <p className="max-w-[800px]">
           From my late teens through my mid-20s, I worked for the U.S.
@@ -32,7 +32,7 @@ const MainPageTextAndImages = () => {
         </span>
       </div>
 
-      <div className="flex w-full flex-col-reverse bg-black md:flex-row">
+      <div className="flex w-full flex-col-reverse md:flex-row">
         <span className="flex h-full flex-col gap-4 md:w-[60%]">
           <span className="relative h-full min-h-[400px]">
             <Image
@@ -59,7 +59,7 @@ const MainPageTextAndImages = () => {
         </span>
       </div>
 
-      <div className="flex w-full flex-col bg-black md:flex-row">
+      <div className="flex w-full flex-col md:flex-row">
         <span className="flex h-full items-center justify-center p-16 md:w-[40%]">
           <p className="max-w-[800px] text-white">
             1981 brought busy times for the U.S.G.S. Tacoma office, with
@@ -86,7 +86,7 @@ const MainPageTextAndImages = () => {
         </span>
       </div>
 
-      <div className="flex w-full flex-col-reverse bg-black md:flex-row">
+      <div className="flex w-full flex-col-reverse md:flex-row">
         <span className="flex h-full flex-col gap-4 md:w-[60%]">
           <span className="relative h-full min-h-[400px]">
             <Image
@@ -131,7 +131,7 @@ const MainPageTextAndImages = () => {
         </span>
       </div>
 
-      <div className="flex w-full flex-col bg-black md:flex-row">
+      <div className="flex w-full flex-col md:flex-row">
         <span className="flex h-full flex-col justify-center gap-4 p-16 text-start text-white md:w-[40%]">
           <p className="">
             Sandy Embrey, Norm Dion, Len Nelson, Steve Sumioka, Gary Turney, Ron
@@ -181,16 +181,19 @@ const MainPageTextAndImages = () => {
       </div>
 
       <div className="relative flex w-full flex-col items-center gap-4 lg:justify-center">
-        <span className="w-fullmd:min-h-[400px] relative h-fit md:w-1/2">
+        <span className="relative h-fit min-h-[200px] w-full min-w-full md:min-h-[400px] md:w-1/2">
           <Image
             src="/images/July161981Waterchemistryanalysis.jpg"
             alt="July 16, 1981  Chemical analysis on Spirit Lake's East Arm. USGS Water Resources Division's Sandy Embrey and Gary Turney hemmed in by log mat in 14-foot aluminum boat.  USGS Lyn Topinka"
-            height={1000}
-            width={1000}
-            className="object-cover"
+            fill
+            className="object-contain"
+            // height={600}
+            // width={600}
+            // className="object-cover"
+            // fill
           />
         </span>
-        <p className="text-center text-sm text-white md:max-w-1/2">
+        <p className="px-6 text-center text-sm text-white md:max-w-1/2 md:px-0">
           July 16, 1981 Chemical analysis on Spirit Lake&apos;s East Arm. USGS
           Water Resources Division&apos;s Sandy Embrey and Gary Turney hemmed in
           by log mat in 14-foot aluminum boat. USGS Lyn Topinka
