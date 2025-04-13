@@ -4,7 +4,7 @@ import { useRef } from "react"
 
 const MainPageTextAndImages = () => {
   const redZonePassRef = useRef<HTMLDivElement>(null)
-  const july1980RonLombardandMoryMilesRef = useRef<HTMLDivElement>(null)
+  const july1980RonLombardandMauryMilesRef = useRef<HTMLDivElement>(null)
   const thirdWeekOfJanuary1981Ref = useRef<HTMLDivElement>(null)
   const midMay1981LeonardNelsonRef = useRef<HTMLDivElement>(null)
   const july161981WaterchemistryanalysisRef = useRef<HTMLDivElement>(null)
@@ -36,14 +36,14 @@ const MainPageTextAndImages = () => {
         <span className="flex h-full flex-col gap-4 md:w-[60%]">
           <span className="relative h-full min-h-[400px]">
             <Image
-              src="/images/July1980RonLombardandMoryMiles.jpg"
-              alt="July 1980 Ron Lombard and Mory Miles surveying a cross section on the South Fork Toutle River near Four Corners. USGS K. Tanner"
+              src="/images/July1980RonLombardandMauryMiles.jpg"
+              alt="July 1980 Ron Lombard and Maury Miles surveying a cross section on the South Fork Toutle River near Four Corners. USGS K. Tanner"
               fill
               className="size-full object-cover"
             />
           </span>
           <p className="px-6 text-center text-sm text-white">
-            July 1980 Ron Lombard and Mory Miles surveying a cross section on
+            July 1980 Ron Lombard and Maury Miles surveying a cross section on
             the South Fork Toutle River near Four Corners. USGS K. Tanner
           </p>
         </span>
@@ -136,10 +136,10 @@ const MainPageTextAndImages = () => {
           <p className="">
             Sandy Embrey, Norm Dion, Len Nelson, Steve Sumioka, Gary Turney, Ron
             Lombard, Jim Ebbert, Rick Wagner, Dave Kresch, my boss Charley
-            Swift, Associate District Chief P.J. Carpenter, and Ken Tanner.
+            Swift, Associate District Chief P.J. Carpenter, and Ken Tanner...
           </p>
           <p>
-            We still refer to ourselves as The Spirit Lake Yacht Club.
+            we still refer to ourselves as The Spirit Lake Yacht Club.
             You&apos;ll read our stories and hydrologic research and see our
             photographs from around the volcano. Many other Tacoma WRD
             hydrologists that you will meet are sadly gone, or are in their 80s
@@ -180,8 +180,8 @@ const MainPageTextAndImages = () => {
         </span>
       </div>
 
-      <div className="relative flex w-full flex-col items-center justify-center gap-4">
-        <span className="relative min-h-[400px] w-1/2">
+      <div className="relative flex w-full flex-col items-center gap-4 lg:justify-center">
+        <span className="w-fullmd:min-h-[400px] relative h-fit md:w-1/2">
           <Image
             src="/images/July161981Waterchemistryanalysis.jpg"
             alt="July 16, 1981  Chemical analysis on Spirit Lake's East Arm. USGS Water Resources Division's Sandy Embrey and Gary Turney hemmed in by log mat in 14-foot aluminum boat.  USGS Lyn Topinka"
@@ -190,7 +190,7 @@ const MainPageTextAndImages = () => {
             className="object-cover"
           />
         </span>
-        <p className="max-w-1/2 text-center text-sm text-white">
+        <p className="text-center text-sm text-white md:max-w-1/2">
           July 16, 1981 Chemical analysis on Spirit Lake&apos;s East Arm. USGS
           Water Resources Division&apos;s Sandy Embrey and Gary Turney hemmed in
           by log mat in 14-foot aluminum boat. USGS Lyn Topinka

@@ -49,8 +49,8 @@ const DayPresentationPage = ({
     )
   }
   return (
-    <div className="flex h-dvh w-full flex-col gap-16 overflow-auto p-8 pl-20">
-      <div className="font-header flex items-center justify-center gap-2 text-2xl text-white">
+    <div className="flex h-dvh w-full flex-col gap-16 overflow-auto p-8 md:pl-20">
+      <div className="font-header flex items-center justify-center gap-2 text-2xl font-bold text-white">
         <h3 className="font-header text-tangerine flex items-center justify-center gap-2 text-2xl">
           {todaysPresentation?.date}, {todaysPresentation?.year},{" "}
           {todaysPresentation?.weekday}
@@ -60,7 +60,7 @@ const DayPresentationPage = ({
       <GoogleSlideWrapper
         presentationUrl={todaysPresentation?.presentation_url}
       />
-      <div className="flex flex-col gap-4 px-12 font-normal text-white">
+      <div className="flex flex-col gap-4 px-12 font-normal text-white ">
         <span className="font-bold">{todaysPresentation?.notes}</span>
       </div>
     </div>

@@ -3,6 +3,7 @@ import { getTodaysPresentation } from "@/utils/functions"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import MainPageTextAndImages from "@/views/MainPageTextAndImages"
+import Button from "@/components/Button"
 
 export default function Home() {
   const todaysPresentation = getTodaysPresentation()
@@ -11,7 +12,7 @@ export default function Home() {
 
   return (
     <div className="flex h-dvh w-full flex-col gap-8 overflow-x-hidden overflow-y-auto">
-      <div className="relative flex h-full min-h-full w-full flex-col gap-8 pt-16 pl-18">
+      <div className="relative flex h-full min-h-full w-full flex-col gap-8 pt-16 pl-12 md:pl-18">
         <div className="relative h-3/4 w-full">
           <Image
             src="/images/StHelensHeaderImage.jpg"
@@ -31,25 +32,28 @@ export default function Home() {
           </h3>
         </div>
       </div>
+      <div className="flex justify-center">
+        <Button
+          onClick={() => {
+            const releaseDate = todaysPresentation?.release_date
+            router.push(`/slides/${releaseDate}`)
+          }}
+        >
+          View Today's Presentation
+        </Button>
+      </div>
       <MainPageTextAndImages />
       <div className="flex size-full flex-col items-center justify-center gap-8 p-8">
         {!!todaysPresentation ? (
           <>
-            <h3 className="text-tangerine-dark text-xl md:text-2xl">
-              View Slides
-            </h3>
-            <button
+            <Button
               onClick={() => {
                 const releaseDate = todaysPresentation?.release_date
                 router.push(`/slides/${releaseDate}`)
               }}
-              className="cursor-pointer"
             >
-              <h3 className="font-header text-tangerine flex items-center justify-center gap-2 text-2xl">
-                {todaysPresentation?.date}, {todaysPresentation?.year},{" "}
-                {todaysPresentation?.weekday}
-              </h3>
-            </button>
+              View Today's Presentation
+            </Button>
           </>
         ) : (
           <span className="text-tangerine flex size-full flex-grow items-center justify-center text-center text-2xl">

@@ -24,7 +24,7 @@ export default function RootLayout({
       </head>
       <body
         suppressHydrationWarning={true}
-        className={`bg-dark-blue font-main relative flex h-svh w-svw flex-col items-center overflow-auto`}
+        className="bg-dark-blue font-main relative flex h-svh w-svw flex-col items-center overflow-auto"
       >
         <NavBar />
         {children}

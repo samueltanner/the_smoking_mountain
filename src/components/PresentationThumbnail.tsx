@@ -20,12 +20,12 @@ export default function PresentationThumbnail({
 
   return (
     <button
-      className="group flex h-[300px] w-full max-w-[600px] cursor-pointer flex-col gap-2"
+      className="group flex h-[300px] w-full max-w-[600px] cursor-pointer flex-col gap-3"
       onClick={() => {
         router.push(route)
       }}
     >
-      <div className="relative flex h-[90%] w-full">
+      <div className="group-hover:ring-tangerine-dark group-hover:ring-offset-dark-blue fade-in-out relative flex h-[85%] w-full rounded-xl group-hover:ring-4 group-hover:ring-offset-4">
         <img
           src={`/images/ThumbnailPhotos/${presentation.release_date}.jpg`}
           alt={presentation.title}

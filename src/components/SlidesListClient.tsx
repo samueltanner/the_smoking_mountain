@@ -23,7 +23,7 @@ export default function SlidesListClient() {
   })
 
   return (
-    <div className="flex h-dvh w-full flex-col gap-16 overflow-x-hidden overflow-y-auto p-8 pl-20">
+    <div className="flex h-dvh w-full flex-col gap-16 overflow-x-hidden overflow-y-auto p-8 pl-12 md:pl-20">
       <div className="flex size-full flex-wrap gap-8">
         {availablePresentations.length > 0 ? (
           availablePresentations.map((presentation) => (
