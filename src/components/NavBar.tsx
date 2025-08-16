@@ -1,5 +1,4 @@
 "use client"
-import { getTodaysPresentation } from "@/utils/functions"
 import { List, X } from "@phosphor-icons/react"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
@@ -7,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const NavBar = () => {
   const router = useRouter()
-  const todaysPresentation = getTodaysPresentation()
+
   const [isOpen, setIsOpen] = useState(false)
 
   const handleClick = (path: string) => {
@@ -52,16 +51,7 @@ const NavBar = () => {
                 Home
               </button>
               <button
-                onClick={() =>
-                  handleClick(`/slides/${todaysPresentation?.release_date}`)
-                }
-                disabled={!todaysPresentation}
-                className="fade-in-out"
-              >
-                Today's Presentation
-              </button>
-              <button
-                onClick={() => handleClick("/slides")}
+                onClick={() => handleClick(`/slides`)}
                 className="fade-in-out"
               >
                 All Presentations

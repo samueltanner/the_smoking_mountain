@@ -37,7 +37,7 @@ const MainPageTextAndImages = () => {
           <span className="relative h-full min-h-[400px]">
             <Image
               src="/images/July1980RonLombardandMauryMiles.jpg"
-              alt="July 1980 Ron Lombard and Maury Miles surveying a cross section on the South Fork Toutle River near Four Corners. USGS K. Tanner"
+              alt="July 1980 Ron Lombard and Maury Miles surveying a cross section on the Main Fork Toutle River. USGS K. Tanner"
               fill
               className="size-full object-cover"
             />
@@ -147,8 +147,9 @@ const MainPageTextAndImages = () => {
             especially excited to share Sandy&apos;s and Gary&apos;s slides.
             Stunning, never-seen-before photos of the effects of the blast. A
             big U.S.G.S. 40th anniversary reunion scheduled for May 2020 at
-            Toutle Lake High School was cancelled by the pandemic, and we
-            eagerly await the upcoming 45th reunion this spring 2025.
+            Toutle Lake High School was cancelled by the pandemic. We eagerly
+            await the 50th and the Johnston Ridge Observatory will likely be
+            open for the event.
           </p>
           <p>
             The sequence and timing of events in the first 10 minutes of the May

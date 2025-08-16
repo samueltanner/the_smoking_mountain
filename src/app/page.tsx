@@ -1,13 +1,10 @@
 "use client"
-import { getTodaysPresentation } from "@/utils/functions"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import MainPageTextAndImages from "@/views/MainPageTextAndImages"
 import Button from "@/components/Button"
 
 export default function Home() {
-  const todaysPresentation = getTodaysPresentation()
-
   const router = useRouter()
 
   return (
@@ -35,31 +32,21 @@ export default function Home() {
       <div className="flex justify-center">
         <Button
           onClick={() => {
-            const releaseDate = todaysPresentation?.release_date
-            router.push(`/slides/${releaseDate}`)
+            router.push(`/slides`)
           }}
         >
-          View Today's Presentation
+          View All Presentations
         </Button>
       </div>
       <MainPageTextAndImages />
       <div className="flex size-full flex-col items-center justify-center gap-8 p-8">
-        {!!todaysPresentation ? (
-          <>
-            <Button
-              onClick={() => {
-                const releaseDate = todaysPresentation?.release_date
-                router.push(`/slides/${releaseDate}`)
-              }}
-            >
-              View Today's Presentation
-            </Button>
-          </>
-        ) : (
-          <span className="text-tangerine flex size-full flex-grow items-center justify-center text-center text-2xl">
-            <p>First presentation will release on March 20th.</p>
-          </span>
-        )}
+        <Button
+          onClick={() => {
+            router.push(`/slides`)
+          }}
+        >
+          View All Presentations
+        </Button>
       </div>
     </div>
   )

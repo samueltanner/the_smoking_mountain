@@ -1472,7 +1472,7 @@ export const presentationDays = [
   },
   {
     day_count: "Before & After photograph",
-    date: "Before & After photographs",
+    date: "Before & After Photographs",
     year: "",
     weekday: "",
     title:

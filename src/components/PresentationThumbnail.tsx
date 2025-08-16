@@ -3,18 +3,13 @@ import { useRouter } from "next/navigation"
 
 export default function PresentationThumbnail({
   presentation,
-  isAll,
 }: {
   presentation: any
-  isAll: boolean
 }) {
   const router = useRouter()
   if (!presentation?.presentation_id) return null
 
   let route = `/slides/${presentation.release_date}`
-  if (isAll) {
-    route = `/slides/${presentation.release_date}?all=true`
-  }
 
   const title = `${presentation.date}${presentation?.year ? `, ${presentation.year}` : ""}`
 

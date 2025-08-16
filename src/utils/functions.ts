@@ -4,13 +4,11 @@ import customParseFormat from "dayjs/plugin/customParseFormat"
 dayjs.extend(customParseFormat)
 
 
-export const getTodaysPresentation = (dateOverride?: string, allowFuture: boolean = false) => {
+export const getTodaysPresentation = (dateOverride?: string, allowFuture: boolean = true) => {
   const currentYear = dayjs().year()
-
 
   const date = dayjs(`${currentYear}-${dateOverride || dayjs().format("MM-DD")}`, "YYYY-MM-DD")
   const today = dayjs(`${currentYear}-${dayjs().format("MM-DD")}`, "YYYY-MM-DD")
-
 
 
   let targetDate = date
@@ -23,9 +21,18 @@ export const getTodaysPresentation = (dateOverride?: string, allowFuture: boolea
   let todaysPresentation = presentationDays.find(
     (presentation) => presentation.release_date === targetDate.format("MM-DD")
   )
+  const todaysPresentationIndex = presentationDays.findIndex(
+    (presentation) => presentation.release_date === targetDate.format("MM-DD")
+  )
 
-
-
+  let tomorrowsPresentationIndex = todaysPresentationIndex + 1
+  let yesterdaysPresentationIndex = todaysPresentationIndex - 1
+  if (tomorrowsPresentationIndex >= presentationDays.length) {
+    tomorrowsPresentationIndex = 0
+  }
+  if (yesterdaysPresentationIndex < 0) {
+    yesterdaysPresentationIndex = presentationDays.length - 1
+  }
 
   if (!todaysPresentation) {
     for (let i = presentationDays.length - 1; i >= 0; i--) {
@@ -38,7 +45,16 @@ export const getTodaysPresentation = (dateOverride?: string, allowFuture: boolea
     }
   }
 
-  return todaysPresentation
+  const tomorrowsPresentation = presentationDays[tomorrowsPresentationIndex]
+  const tomorrowsPresentationReleaseDate = tomorrowsPresentation.release_date
+  const yesterdaysPresentation = presentationDays[yesterdaysPresentationIndex]
+  const yesterdaysPresentationReleaseDate = yesterdaysPresentation.release_date
+
+  return {
+    todaysPresentation,
+    tomorrowsPresentationReleaseDate,
+    yesterdaysPresentationReleaseDate,
+  }
 }
 
 
