@@ -44,7 +44,7 @@ const MainPageTextAndImages = () => {
           </span>
           <p className="px-6 text-center text-sm text-white">
             July 1980 Ron Lombard and Maury Miles surveying a cross section on
-            the South Fork Toutle River near Four Corners. USGS K. Tanner
+            the Main Fork Toutle River. USGS K. Tanner
           </p>
         </span>
         <span className="flex h-full flex-col items-center justify-center p-16 md:w-[40%]">
@@ -66,7 +66,7 @@ const MainPageTextAndImages = () => {
             continued monitoring and measurement of all streams and rivers,
             chemical analyses on the many nearby lakes, study and test drilling
             on the debris avalanche deposits blocking the fast-filling Spirit,
-            Coldwater, and South Fork Castle Creek Lakes…and best of all,
+            Coldwater, and South Fork Castle Creek Lakes… and best of all,
             bathymetric surveys of those three lakes and more.
           </p>
         </span>
@@ -117,7 +117,7 @@ const MainPageTextAndImages = () => {
             introductory slide.
           </p>
           <p>
-            The 59 pre-eruption presentations focus mainly on U.S.G.S.
+            The &apos;59 pre-eruption presentations focus mainly on U.S.G.S.
             geologists and volcanologists monitoring phreatic eruptions and the
             deformation of the volcano&apos;s north flank, historic photographs,
             maps, and legends. After Day 60, in addition to daily events, the
