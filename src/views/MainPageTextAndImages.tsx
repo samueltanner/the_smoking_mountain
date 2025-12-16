@@ -117,7 +117,7 @@ const MainPageTextAndImages = () => {
             introductory slide.
           </p>
           <p>
-            The &apos;59 pre-eruption presentations focus mainly on U.S.G.S.
+            The 59 pre-eruption presentations focus mainly on U.S.G.S.
             geologists and volcanologists monitoring phreatic eruptions and the
             deformation of the volcano&apos;s north flank, historic photographs,
             maps, and legends. After Day 60, in addition to daily events, the
