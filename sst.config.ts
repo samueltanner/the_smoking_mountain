@@ -23,7 +23,10 @@ export default $config({
     new sst.aws.Nextjs("TheSmokingMountain", {
       domain: {
         name: "thesmokingmountain.com",
-        aliases: ["www.thesmokingmountain.com"],
+        aliases: ["www.thesmokingmountain.com",
+          "lawetlatla.com",
+          "www.lawetlatla.com",
+        ],
       },
     })
   },
