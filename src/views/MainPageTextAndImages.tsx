@@ -74,13 +74,13 @@ const MainPageTextAndImages = () => {
           <span className="relative h-full min-h-[400px]">
             <Image
               src="/images/ThirdWeekOfJanuary1981.jpg"
-              alt="Third week of January 1981  First trip to Coldwater Lake to perform preliminary bathymetric survey.  USGS K. Tanner"
+              alt="January 19, 1981 - First trip to Coldwater Lake to perform preliminary bathymetric survey.  USGS K. Tanner"
               fill
               className="size-full object-cover"
             />
           </span>
           <p className="px-6 text-center text-sm text-white">
-            Third week of January 1981 First trip to Coldwater Lake to perform
+            January 19, 1981 - First trip to Coldwater Lake to perform
             preliminary bathymetric survey. USGS K. Tanner
           </p>
         </span>
@@ -91,13 +91,13 @@ const MainPageTextAndImages = () => {
           <span className="relative h-full min-h-[400px]">
             <Image
               src="/images/MidMay1981LeonardNelson.jpg"
-              alt="Mid-May 1981  Leonard Nelson in aluminum boat in Bear Cove, West Arm of Spirit Lake with debris avalanche hummocks. Microwave trisponder range finder in boat for use in bathymetric mapping.  USGS K. Tanner"
+              alt="May 5, 1981 - Leonard Nelson in aluminum boat in Bear Cove, West Arm of Spirit Lake with debris avalanche hummocks. Microwave trisponder range finder in boat for use in bathymetric mapping.  USGS K. Tanner"
               fill
               className="size-full object-cover"
             />
           </span>
           <p className="px-6 text-center text-sm text-white">
-            Mid-May 1981 Leonard Nelson in aluminum boat in Bear Cove, West Arm
+            May 5, 1981 - Leonard Nelson in aluminum boat in Bear Cove, West Arm
             of Spirit Lake with debris avalanche hummocks. Microwave trisponder
             range finder in boat for use in bathymetric mapping. USGS K. Tanner
           </p>
@@ -134,7 +134,7 @@ const MainPageTextAndImages = () => {
       <div className="flex w-full flex-col md:flex-row">
         <span className="flex h-full flex-col justify-center gap-4 p-16 text-start text-white md:w-[40%]">
           <p className="">
-            Sandy Embrey, Norm Dion, Len Nelson, Steve Sumioka, Gary Turney, Ron
+            Sandra Embrey, Norm Dion, Len Nelson, Steve Sumioka, Gary Turney, Ron
             Lombard, Jim Ebbert, Rick Wagner, Dave Kresch, my boss Charley
             Swift, Associate District Chief P.J. Carpenter, and Ken Tanner...
           </p>
@@ -144,7 +144,7 @@ const MainPageTextAndImages = () => {
             photographs from around the volcano. Many other Tacoma WRD
             hydrologists that you will meet are sadly gone, or are in their 80s
             and even 90s and I&apos;m hustling to get their stories too. I am
-            especially excited to share Sandy&apos;s and Gary&apos;s slides.
+            especially excited to share Sandra&apos;s and Gary&apos;s slides.
             Stunning, never-seen-before photos of the effects of the blast. A
             big U.S.G.S. 40th anniversary reunion scheduled for May 2020 at
             Toutle Lake High School was cancelled by the pandemic. We eagerly
@@ -167,25 +167,25 @@ const MainPageTextAndImages = () => {
           <span className="relative h-full min-h-[400px]">
             <Image
               src="/images/July201982NPDion.jpg"
-              alt="July 20, 1982  N.P. Dion and S.S. Embrey reading Dissolved Oxygen levels at Deadmans Lake, 12.7 miles NNE of the vent and just beyond the blast zone. Deadman's served as the control in the lakes study.  USGS S.S. Embrey"
+              alt="July 20, 1982 - N.P. Dion and S.S. Embrey reading Dissolved Oxygen levels at Deadmans Lake, 12.7 miles NNE of the vent and just beyond the blast zone. Deadmans served as the control in the lakes study.  USGS S.S. Embrey"
               fill
               className="size-1/2 object-cover"
             />
           </span>
           <p className="px-6 text-center text-sm text-white">
-            July 20, 1982 N.P. Dion and S.S. Embrey reading Dissolved Oxygen
+            July 20, 1982 - N.P. Dion and S.S. Embrey reading Dissolved Oxygen
             levels at Deadmans Lake, 12.7 miles NNE of the vent and just beyond
-            the blast zone. Deadman's served as the control in the lakes study.
+            the blast zone. Deadmans served as the control in the lakes study.
             USGS S.S. Embrey
           </p>
         </span>
       </div>
 
       <div className="relative flex w-full flex-col items-center gap-4 lg:justify-center">
-        <span className="relative h-fit min-h-[200px] w-full min-w-full md:min-h-[400px] md:w-1/2">
+        <span className="relative h-fit min-h-[200px] w-full min-w-full md:min-h-[600px] md:w-1/2">
           <Image
-            src="/images/July161981Waterchemistryanalysis.jpg"
-            alt="July 16, 1981  Chemical analysis on Spirit Lake's East Arm. USGS Water Resources Division's Sandy Embrey and Gary Turney hemmed in by log mat in 14-foot aluminum boat.  USGS Lyn Topinka"
+            src="/images/1-F_123.jpg"
+            alt="July 16, 1981 - Chemical analysis on Spirit Lake's East Arm. USGS Water Resources Division's Sandra Embrey and Gary Turney hemmed in by log mat in 14-foot aluminum boat.  USGS Lyn Topinka"
             fill
             className="object-contain"
             // height={600}
@@ -194,9 +194,9 @@ const MainPageTextAndImages = () => {
             // fill
           />
         </span>
-        <p className="px-6 text-center text-sm text-white md:max-w-1/2 md:px-0">
-          July 16, 1981 Chemical analysis on Spirit Lake&apos;s East Arm. USGS
-          Water Resources Division&apos;s Sandy Embrey and Gary Turney hemmed in
+        <p className="px-6 text-center text-sm text-white md:max-w-2/3 md:px-0">
+          July 16, 1981 - Chemical analysis on Spirit Lake&apos;s East Arm. USGS
+          Water Resources Division&apos;s Sandra Embrey and Gary Turney hemmed in
           by log mat in 14-foot aluminum boat. USGS Lyn Topinka
         </p>
       </div>

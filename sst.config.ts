@@ -9,6 +9,7 @@ export default $config({
       home: "aws",
       providers: {
         aws: {
+          profile: "smst",
           region: "us-east-1",
         }
       }

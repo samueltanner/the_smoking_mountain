@@ -1,32 +1,39 @@
+"use client"
+import { useState } from "react"
+
 const GoogleSlideWrapper = ({
   presentationUrl,
 }: {
   presentationUrl?: string
 }) => {
+  const [interactive, setInteractive] = useState(false)
+
   return (
     <div
-      className="rounded-3xl overflow-hidden flex items-center justify-center"
+      className="relative mx-auto overflow-hidden rounded-3xl"
       style={{
-        position: "relative",
-        overflow: "hidden",
-        paddingTop: "56.25%",
+        width: "min(100%, calc(100dvh * 16 / 9))",
+        aspectRatio: "16 / 9",
       }}
+      onMouseLeave={() => setInteractive(false)}
+      onMouseEnter={() => setInteractive(true)}
     >
       <iframe
         src={presentationUrl}
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          border: 0,
-        }}
+        className="absolute inset-0 h-full w-full border-0"
+        style={{ pointerEvents: interactive ? "auto" : "none" }}
         allowFullScreen
         loading="lazy"
         title="Google Slides Presentation"
-        onWheel={(e) => e.preventDefault()}
       />
+      {!interactive && (
+        <button
+          type="button"
+          aria-label="Click to interact with slides"
+          onClick={() => setInteractive(true)}
+          className="absolute inset-0 cursor-pointer bg-transparent"
+        />
+      )}
     </div>
   )
 }
